@@ -1,0 +1,32 @@
+### Requisação para a raiz da apliação
+GET http://localhost:5135
+
+### Listar produtos
+GET http://localhost:5135/api/colaborador/listar
+
+### Cadastrar produto
+POST http://localhost:5135/api/colaborador/cadastrar/pedro/financeiro/manhã
+
+###
+POST http://localhost:5135/api/colaborador/cadastrar
+Content-Type: application/json
+
+{
+    "name": "Laura Costa",
+    "sector": "Design",
+    "turn": "Manhã",
+    "checkIn": "2024-09-15T08:00:00",
+    "checkOut": "2024-09-15T17:00:00"
+}
+
+###
+POST http://localhost:5130/api/colaborador
+Content-Type: application/json
+
+{
+    "id" : "11fca0e8-a8c5-4b43-940b-bff20493edc0",
+    "name" : "Ana Oliveira",
+    "turn" : "Manhã",
+    "sector" : "Desenvolvimento"
+
+}
